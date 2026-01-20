@@ -624,12 +624,6 @@ form button:enabled:hover {
     position: relative;
 }
 
-.messaggio:empty::before {
-    content: "⚠️ Questo div è VUOTO!";
-    color: white;
-    font-weight: bold;
-}
-
 /* ========================================
    12. :ONLY-CHILD e :ONLY-OF-TYPE
 ========================================= */
