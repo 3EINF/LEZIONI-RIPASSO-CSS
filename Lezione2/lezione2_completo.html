@@ -222,5 +222,238 @@
             <a href="#contatti">Contatti</a>
         </nav>
     </section>
+
+    <!-- ========================================
+         PARTE 3: PROPRIETÀ AVANZATE
+    ========================================= -->
+
+    <!-- OVERFLOW -->
+    <section>
+        <h2>14. Overflow - gestione del contenuto eccedente</h2>
+        
+        <h3>overflow: visible (default)</h3>
+        <div class="overflow-box overflow-visible">
+            <p>Questo contenuto è molto lungo e supera i limiti del contenitore. Con overflow: visible, il contenuto esce fuori dalla box senza nascondersi. Questo è il comportamento predefinito dei browser. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem sed asperiores mollitia explicabo nulla optio amet nihil obcaecati expedita beatae debitis a quidem, vel ipsam unde? Facere ipsum fugit omnis!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, aliquam vel mollitia excepturi voluptates fugiat dolores sequi totam recusandae fuga exercitationem itaque assumenda. Nihil laboriosam reprehenderit accusantium assumenda quas facere?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium pariatur vitae totam facilis nulla fuga obcaecati cupiditate nostrum dolor reiciendis maxime, ipsum tenetur, molestiae, adipisci delectus magnam nisi doloremque exercitationem?
+                
+            </p>
+        
+        </div>
+
+        <h3>overflow: hidden</h3>
+        <div class="overflow-box overflow-hidden">
+            <p>Questo contenuto è molto lungo e supera i limiti del contenitore. Con overflow: hidden, il contenuto viene tagliato e nascosto. Non è visibile né accessibile. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem sed asperiores mollitia explicabo nulla optio amet nihil obcaecati expedita beatae debitis a quidem, vel ipsam unde? Facere ipsum fugit omnis!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, aliquam vel mollitia excepturi voluptates fugiat dolores sequi totam recusandae fuga exercitationem itaque assumenda. Nihil laboriosam reprehenderit accusantium assumenda quas facere?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium pariatur vitae totam facilis nulla fuga obcaecati cupiditate nostrum dolor reiciendis maxime, ipsum tenetur, molestiae, adipisci delectus magnam nisi doloremque exercitationem?
+            </p>
+        </div>
+
+        <h3>overflow: scroll</h3>
+        <div class="overflow-box overflow-scroll">
+            <p>Questo contenuto è molto lungo e supera i limiti del contenitore. Con overflow: scroll, vengono sempre mostrate le barre di scorrimento (anche se non ce n'è bisogno). Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem sed asperiores mollitia explicabo nulla optio amet nihil obcaecati expedita beatae debitis a quidem, vel ipsam unde? Facere ipsum fugit omnis!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, aliquam vel mollitia excepturi voluptates fugiat dolores sequi totam recusandae fuga exercitationem itaque assumenda. Nihil laboriosam reprehenderit accusantium assumenda quas facere?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium pariatur vitae totam facilis nulla fuga obcaecati cupiditate nostrum dolor reiciendis maxime, ipsum tenetur, molestiae, adipisci delectus magnam nisi doloremque exercitationem?
+                
+
+            </p>
+        </div>
+
+        <h3>overflow: auto</h3>
+        <div class="overflow-box overflow-auto">
+            <p>Questo contenuto è molto lungo e supera i limiti del contenitore. Con overflow: auto, le barre di scorrimento appaiono solo quando necessario. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem sed asperiores mollitia explicabo nulla optio amet nihil obcaecati expedita beatae debitis a quidem, vel ipsam unde? Facere ipsum fugit omnis!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, aliquam vel mollitia excepturi voluptates fugiat dolores sequi totam recusandae fuga exercitationem itaque assumenda. Nihil laboriosam reprehenderit accusantium assumenda quas facere?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium pariatur vitae totam facilis nulla fuga obcaecati cupiditate nostrum dolor reiciendis maxime, ipsum tenetur, molestiae, adipisci delectus magnam nisi doloremque exercitationem?
+                
+
+            </p>
+        </div>
+
+        <h3>overflow-x e overflow-y</h3>
+        <div class="overflow-box overflow-xy">
+            <p>Questo testo è molto largo e molto lungo. Con overflow-x: scroll e overflow-y: hidden, posso scorrere solo orizzontalmente. Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem sed asperiores mollitia explicabo nulla optio amet nihil obcaecati expedita beatae debitis a quidem, vel ipsam unde? Facere ipsum fugit omnis!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, aliquam vel mollitia excepturi voluptates fugiat dolores sequi totam recusandae fuga exercitationem itaque assumenda. Nihil laboriosam reprehenderit accusantium assumenda quas facere?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium pariatur vitae totam facilis nulla fuga obcaecati cupiditate nostrum dolor reiciendis maxime, ipsum tenetur, molestiae, adipisci delectus magnam nisi doloremque exercitationem?
+                
+
+            </p>
+        </div>
+    </section>
+
+    <!-- FLOAT -->
+    <section>
+        <h2>15. Float - Elementi Fluttuanti</h2>
+        
+        <h3>float: left</h3>
+        <div class="float-example">
+            <svg class="float-left" width="150" height="150" xmlns="http://www.w3.org/2000/svg">
+                <rect width="150" height="150" fill="#3498db"/>
+                <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="white" font-size="20" font-weight="bold">Immagine</text>
+            </svg>
+            <p>Il float è una proprietà CSS che permette di far "fluttuare" un elemento a sinistra o a destra, facendo fluire il testo attorno ad esso. Viene spesso usato per posizionare immagini con testo che le circonda. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <h3>float: right</h3>
+        <div class="float-example">
+            <svg class="float-right" width="150" height="150" xmlns="http://www.w3.org/2000/svg">
+                <rect width="150" height="150" fill="#e74c3c"/>
+                <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="white" font-size="20" font-weight="bold">Immagine</text>
+            </svg>
+            <p>Quando usiamo float: right, l'elemento si sposta a destra e il contenuto fluisce alla sua sinistra. È importante ricordare che gli elementi con float escono dal normale flusso del documento. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <h3>clear: both (per fermare il float)</h3>
+        <div class="float-example">
+            <div class="float-box float-left">Box 1</div>
+            <div class="float-box float-left">Box 2</div>
+            <div class="float-box float-left">Box 3</div>
+            <div class="clear-both"></div>
+            <p>Questo paragrafo ha clear: both quindi non viene influenzato dai float precedenti e si posiziona sotto tutti gli elementi fluttuanti.</p>
+        </div>
+    </section>
+
+    <!-- MAX-WIDTH e MAX-HEIGHT -->
+    <section>
+        <h2>16. max-width e max-height - Limiti Dimensionali</h2>
+        
+        <h3>max-width</h3>
+        <p><em>Ridimensiona la finestra per vedere l'effetto!</em></p>
+        <div class="box-max-width">
+            Questo box ha max-width: 600px. Significa che non può mai superare i 600px di larghezza, anche se c'è più spazio disponibile.
+        </div>
+
+        <h3>max-height con overflow</h3>
+        <div class="box-max-height">
+            <p>Questo box ha max-height: 100px e overflow: auto. Il contenuto viene mostrato con una scrollbar quando supera i 100px di altezza.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        </div>
+
+        <h3>Immagine Responsiva</h3>
+        <svg class="img-responsive" width="800" height="400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="800" height="400" fill="url(#grad1)"/>
+            <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="white" font-size="40" font-weight="bold">Immagine Responsive 800x400</text>
+        </svg>
+        <p><em>Questa immagine ha max-width: 100% e height: auto, quindi si adatta al contenitore senza deformarsi.</em></p>
+    </section>
+
+    <!-- VISIBILITY -->
+    <section>
+        <h2>17. Visibility - Controllo della visibilità</h2>
+        
+        <h3>visibility: visible vs visibility: hidden</h3>
+        <div class="visibility-demo">
+            <div class="visibility-box visible">Box 1: visible</div>
+            <div class="visibility-box hidden">Box 2: hidden (invisibile ma occupa spazio)</div>
+            <div class="visibility-box visible">Box 3: visible</div>
+        </div>
+
+        <h3>Differenza tra visibility e display</h3>
+        <div class="visibility-demo">
+            <div class="visibility-box visible">Box 1: visible</div>
+            <div class="visibility-box display-none">Box 2: display none (non occupa spazio)</div>
+            <div class="visibility-box visible">Box 3: visible</div>
+        </div>
+        <p><em>Nota: visibility: hidden mantiene lo spazio, display: none lo rimuove completamente!</em></p>
+
+        <h3>visibility: collapse (per le tabelle)</h3>
+        <table class="visibility-table">
+            <tr>
+                <td>Cella 1</td>
+                <td>Cella 2</td>
+                <td>Cella 3</td>
+            </tr>
+            <tr class="collapse-row">
+                <td>Riga nascosta</td>
+                <td>con collapse</td>
+                <td>(solo tabelle)</td>
+            </tr>
+            <tr>
+                <td>Cella 7</td>
+                <td>Cella 8</td>
+                <td>Cella 9</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- OPACITY -->
+    <section>
+        <h2>18. Opacity - Trasparenza</h2>
+        
+        <h3>Livelli di Opacità</h3>
+        <div class="opacity-demo">
+            <div class="opacity-box opacity-100">opacity: 1 (100%)</div>
+            <div class="opacity-box opacity-75">opacity: 0.75 (75%)</div>
+            <div class="opacity-box opacity-50">opacity: 0.5 (50%)</div>
+            <div class="opacity-box opacity-25">opacity: 0.25 (25%)</div>
+            <div class="opacity-box opacity-0">opacity: 0 (0% - invisibile)</div>
+        </div>
+
+        <h3>Opacity con Hover</h3>
+        <p><em>Passa il mouse sulle immagini!</em></p>
+        <div class="opacity-demo">
+            <svg class="img-opacity" width="150" height="150" xmlns="http://www.w3.org/2000/svg">
+                <rect width="150" height="150" fill="#9b59b6"/>
+                <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="white" font-size="24" font-weight="bold">Img 1</text>
+            </svg>
+            <svg class="img-opacity" width="150" height="150" xmlns="http://www.w3.org/2000/svg">
+                <rect width="150" height="150" fill="#3498db"/>
+                <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="white" font-size="24" font-weight="bold">Img 2</text>
+            </svg>
+            <svg class="img-opacity" width="150" height="150" xmlns="http://www.w3.org/2000/svg">
+                <rect width="150" height="150" fill="#2ecc71"/>
+                <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="white" font-size="24" font-weight="bold">Img 3</text>
+            </svg>
+        </div>
+
+        <h3>Opacity vs rgba()</h3>
+        <div class="opacity-comparison">
+            <div class="opacity-parent opacity-50">
+                opacity: 0.5
+                <div class="child">Figlio (eredita 0.5)</div>
+            </div>
+            <div class="opacity-parent rgba-bg">
+                background: rgba(52, 152, 219, 0.5)
+                <div class="child">Figlio (non trasparente)</div>
+            </div>
+        </div>
+        <p><em>Nota: opacity rende trasparente tutto (inclusi i figli), rgba() solo il colore!</em></p>
+    </section>
+
+    <!-- USER-SELECT -->
+    <section>
+        <h2>19. user-select - Controllo della selezione del testo</h2>
+        
+        <h3>user-select: auto (default)</h3>
+        <p class="select-auto">Questo testo può essere selezionato normalmente. Prova a selezionare questo paragrafo con il mouse!</p>
+
+        <h3>user-select: none</h3>
+        <p class="select-none">Questo testo NON può essere selezionato! Prova a selezionarlo con il mouse - non funzionerà. Utile per testi decorativi o interfacce.</p>
+
+        <h3>user-select: all</h3>
+        <p class="select-all">Questo testo viene selezionato TUTTO con un solo click! Prova a cliccare una volta su questo paragrafo.</p>
+
+        <h3>user-select: text</h3>
+        <div class="select-text">
+            <p>Questo è dentro un div. Il div non è selezionabile, ma il testo sì! È utile per proteggere gli elementi strutturali ma permettere la selezione del contenuto.</p>
+        </div>
+
+        <h3>Esempio Pratico - Pulsanti</h3>
+        <div class="button-demo">
+            <button class="btn-select-none">Bottone (testo non selezionabile)</button>
+            <button class="btn-select-auto">Bottone (testo selezionabile)</button>
+        </div>
+    </section>
 </body>
 </html>
